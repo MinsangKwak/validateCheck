@@ -9,13 +9,18 @@
 </head>
 
 <body>
-    <h2>유효성 검사</h2>
+    <h2>회원가입</h2>
+    <p>이름확인: 한글,영어만 입력가능 / 특수문자 숫자는 안됨</p>
+
     <div class="input-group">
-        <label for="username"></label>
-        <input type="text" id="username" name="username" required />
+        <label for="userName"><span class="dot">*</span>이름</label>
+        <input type="text" id="userName" name="userName" />
+        <p class="notice"></p>
     </div>
 
-    <script src="js/validateCheck"></script>
+    <button type="button" id="btnSubmit">제출</button>
+
+    <script src="js/validateCheck.js"></script>
 </body>
 
 </html>
